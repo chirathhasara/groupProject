@@ -1,11 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Society of Technological Studies</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 <body>
-  
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/logo.jpg" class="logo-image">
+        </div>
+        <div class="nav-links" id="navLinks">
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Programs</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <i class="fas fa-bars" id="openMenu"></i>
+    </nav>
+
+    <!-- Hero Banner -->
+    <section class="hero">
+        <div class="hero-content animate__animated animate__fadeIn">
+            <a href="#programs" class="btn">Explore Our Programs</a>
+        </div>
+    </section>
+
+    <!-- Image Slider -->
+    <section class="slider-container">
+        <h2 class="section-title">Featured Moments</h2>
+        <div class="slider">
+            <div class="slides">
+                <div class="slide active">
+                    <img src="/images/astro.jpg" alt="STS Event 1">
+                    <div class="slide-caption">Technology Exhibition 2025</div>
+                </div>
+                <div class="slide">
+                    <img src="/images/nanasawiya.jpg" alt="STS Event 2">
+                    <div class="slide-caption">Innovation Workshop</div>
+                </div>
+                <div class="slide">
+                    <img src="/images/cricket.jpg" alt="STS Event 3">
+                    <div class="slide-caption">Annual Tech Conference</div>
+                </div>
+                <div class="slide">
+                    <img src="/images/nanapahasa.jpg" alt="STS Event 4">
+                    <div class="slide-caption">Community Outreach</div>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+                <div class="dots">
+                    <span class="dot active" data-index="0"></span>
+                    <span class="dot" data-index="1"></span>
+                    <span class="dot" data-index="2"></span>
+                    <span class="dot" data-index="3"></span>
+                </div>
+                <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section class="programs" id="programs">
+        <h2 class="section-title">Our Programs</h2>
+        <div class="programs-container">
+            <div class="program-card animate__animated animate__fadeInUp">
+                <div class="program-icon">
+                    <i class="fas fa-language"></i>
+                </div>
+                <h3>Nanapahasa</h3>
+                <p>A multilingual technology program bridging language barriers in the tech world.</p>
+                <a href="#" class="program-link">Learn More</a>
+            </div>
+            <div class="program-card animate__animated animate__fadeInUp" style="animation-delay: 0.2s;">
+                <div class="program-icon">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <h3>Nanasawiya</h3>
+                <p>Knowledge-sharing sessions focusing on cutting-edge technological advancements.</p>
+                <a href="#" class="program-link">Learn More</a>
+            </div>
+            <div class="program-card animate__animated animate__fadeInUp" style="animation-delay: 0.4s;">
+                <div class="program-icon">
+                    <i class="fas fa-rocket"></i>
+                </div>
+                <h3>Astro Camp</h3>
+                <p>Immersive space technology and astronomy exploration programs for enthusiasts.</p>
+                <a href="#" class="program-link">Learn More</a>
+            </div>
+            <div class="program-card animate__animated animate__fadeInUp" style="animation-delay: 0.6s;">
+                <div class="program-icon">
+                    <i class="fas fa-cricket"></i>
+                </div>
+                <h3>STS Cricket Match</h3>
+                <p>Annual cricket tournament fostering teamwork and sportsmanship among tech enthusiasts.</p>
+                <a href="#" class="program-link">Learn More</a>
+            </div>
+            <div class="program-card animate__animated animate__fadeInUp" style="animation-delay: 0.8s;">
+                <div class="program-icon">
+                    <i class="fas fa-microphone"></i>
+                </div>
+                <h3>Pep Talks</h3>
+                <p>Inspirational talks by industry leaders and innovators in various tech domains.</p>
+                <a href="#" class="program-link">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Members Section -->
+    <section class="team">
+        <h2 class="section-title">Our Team</h2>
+        <div class="team-container">
+            <div class="team-member animate__animated animate__fadeInLeft">
+                <div class="member-img">
+                    <img src="/api/placeholder/200/200" alt="President">
+                </div>
+                <h3>Chamuditha</h3>
+                <p class="position">President</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="team-member animate__animated animate__fadeInLeft" style="animation-delay: 0.2s;">
+                <div class="member-img">
+                    <img src="/api/placeholder/200/200" alt="Vice President">
+                </div>
+                <h3>Lakmal Abewickrama</h3>
+                <p class="position">Vice President</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="team-member animate__animated animate__fadeInLeft" style="animation-delay: 0.4s;">
+                <div class="member-img">
+                    <img src="/api/placeholder/200/200" alt="Secretary">
+                </div>
+                <h3>Tashini Perera</h3>
+                <p class="position">Secretary</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="team-member animate__animated animate__fadeInLeft" style="animation-delay: 0.6s;">
+                <div class="member-img">
+                    <img src="/api/placeholder/200/200" alt="Editor">
+                </div>
+                <h3>Dasun Cooray</h3>
+                <p class="position">Editor</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="team-member animate__animated animate__fadeInLeft" style="animation-delay: 0.8s;">
+                <div class="member-img">
+                    <img src="/api/placeholder/200/200" alt="Treasurer">
+                </div>
+                <h3>Rashmika Madhushan</h3>
+                <p class="position">Treasurer</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h2>Society of Technological Studies</h2>
+                <p>Dedicated to advancing technological knowledge and fostering innovation among students and professionals alike.</p>
+                <div class="contact">
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Tech Avenue, Innovation City</p>
+                    <p><i class="fas fa-phone"></i> +1 (123) 456-7890</p>
+                    <p><i class="fas fa-envelope"></i> info@sts-society.org</p>
+                </div>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-section links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Programs</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section newsletter">
+                <h2>Newsletter</h2>
+                <p>Subscribe to our newsletter for updates on upcoming events and programs.</p>
+                <form>
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit" class="btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Society of Technological Studies | All rights reserved</p>
+        </div>
+    </footer>
+
+    <script src="js/index.js"></script>
 </body>
 </html>
