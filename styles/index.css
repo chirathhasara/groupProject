@@ -132,7 +132,7 @@ ul {
 /* Hero Section */
 .hero {
     height: 90vh;
-    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/images/cover-image.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/cover-image.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
